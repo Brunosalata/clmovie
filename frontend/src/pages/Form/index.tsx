@@ -11,16 +11,16 @@ function Form() {
     };
 
     return (
-        <div className="dsmovie-form-container">
-            <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
-            <div className="dsmovie-card-bottom-container">
+        <div className="clmovie-form-container">
+            <img className="clmovie-movie-card-image" src={movie.image} alt={movie.title} />
+            <div className="clmovie-card-bottom-container">
                 <h3>"The Witcher"</h3>
-                <form className="dsmovie-form">
-                    <div className="form-group dsmovie-form-group">
+                <form className="clmovie-form">
+                    <div className="form-group clmovie-form-group">
                         <label htmlFor="email">Informe seu email</label>
                         <input type="email" className="form-control" id="email" />
                     </div>
-                    <div className="form-group dsmovie-form-group">
+                    <div className="form-group clmovie-form-group">
                         <label htmlFor="score">Informe sua avaliação</label>
                         <select className="form-control" id="score">
                             <option>1</option>
@@ -30,11 +30,11 @@ function Form() {
                             <option>5</option>
                         </select>
                     </div>
-                    <div className="dsmovie-form-btn-container">
-                        <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
+                    <div className="clmovie-form-btn-container">
+                        <button type="submit" className="btn btn-primary clmovie-btn">Salvar</button>
                     </div>
                 </form >
-                <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                <button className="btn btn-primary clmovie-btn mt-3">Cancelar</button>
             </div >
         </div >
     );

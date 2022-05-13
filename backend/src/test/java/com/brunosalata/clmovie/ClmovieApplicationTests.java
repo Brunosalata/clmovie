@@ -1,10 +1,10 @@
-package com.brunosalata.clmovies;
+package com.brunosalata.clmovie;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ClmoviesApplicationTests {
+class ClmovieApplicationTests {
 
 	@Test
 	void contextLoads() {

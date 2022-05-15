@@ -705,3 +705,15 @@ Isso foi feito para que o frontend tenha acesso ao backend, que estarão hospeda
 
 		Site settings -> Domain Management: (colocar o nome que você quiser)
 		Deploys -> Trigger deploy
+
+
+
+Interromper aplicação na port 8080 utilizando o promp (cdm) 
+
+	Acessar o CDM
+
+		>netstat -a -n -o
+
+		Listagem dos protocolos > coluna Endereço local > IP finalizando em 8080 (0.0.0.0:8080) > Identificar o PID dele
+
+		>taskkill -f -im "numero PID" (sem aspas)		

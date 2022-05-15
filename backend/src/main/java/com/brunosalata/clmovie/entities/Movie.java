@@ -1,9 +1,13 @@
 package com.brunosalata.clmovie.entities;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;  // persistence é focado na especificação, enquanto hybernate é na implementação. Se acabar mudando a implementação, a especificação continua inalterada
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,8 +23,10 @@ public class Movie {
 	private String image;
 	// utilização de classes primitivas é mais indicado para banco de dados, uma vez que aceita nulo, por exemplo
 	
+	@OneToMany(mappedBy = "id.movie")
+	private Set<Score> scores = new HashSet<>();
+	
 	public Movie() {
-		
 	}
 	
 	public Movie(Long id, String title, Double score, Integer count, String image) {
@@ -69,6 +75,14 @@ public class Movie {
 
 	public void setImage(String image) {
 		this.image = image;
+	}
+
+	public Set<Score> getScores() {
+		return scores;
+	}
+
+	public void setScores(Set<Score> scores) {
+		this.scores = scores;
 	}
 	
 	

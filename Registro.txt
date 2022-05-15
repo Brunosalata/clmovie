@@ -544,6 +544,8 @@ Checklist
 
 	COMMIT: Security config
 
+Isso foi feito para que o frontend tenha acesso ao backend, que estarão hospedados em servidores distintos.
+
 2 - Criar as entidades e o seed do banco
 
 	Modelo conceitual

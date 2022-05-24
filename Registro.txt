@@ -767,6 +767,8 @@ Passo: Primeira requisição
 		    empty: boolean;
 		}
 
+	OBS: Ele solicita duas vezes o retorno, por isso é necessária aplicar o React Hooks
+
 	COMMIT: First request
 
 
